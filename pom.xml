@@ -37,7 +37,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -73,7 +72,7 @@
         <!--        gRpc-->
         <dependency>
             <groupId>net.devh</groupId>
-            <artifactId>grpc-client-spring-boot-starter</artifactId>
+            <artifactId>grpc-server-spring-boot-starter</artifactId>
             <version>3.0.0.RELEASE</version>
         </dependency>
         <dependency>
@@ -90,6 +89,16 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.16.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>0.10.4</version>
         </dependency>
     </dependencies>
     <build>

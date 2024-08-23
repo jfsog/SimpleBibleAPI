@@ -2,15 +2,15 @@ syntax = "proto3";
 option java_multiple_files = true;
 option java_package = "com.jfsog.grpc_bible.v1.Bible";
 
-package com.jfsog.grpc_bible.v1.Bible;
+package com.jfsog.simplebibleapi.v1.Bible;
 service BibleService{
-  rpc GetVerse(RequestMsg) returns (responseMsg);
+  rpc BuscaVerso(RequestMsg) returns (ResponseMsg);
 }
 message RequestMsg{
   string livro =1;
   uint32 capitulo =2;
   uint32 versiculo =3;
 }
-message responseMsg{
+message ResponseMsg{
   string valor =1;
 }
