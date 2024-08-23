@@ -18,7 +18,8 @@ public class BibleService extends BibleServiceGrpc.BibleServiceImplBase {
     VerseRepository verseRepository;
     @Override
     public void buscaVerso(RequestMsg request, StreamObserver<ResponseMsg> responseObserver) {
-        var res = Optional.ofNullable(verseRepository.findByLivroAndCapituloAndVersiculo(request.getLivro(),
+        var res = Optional.ofNullable(verseRepository.findByLivroAndCapituloAndVersiculo(request.getLivro()
+                                                                                                .toLowerCase(),
                 request.getCapitulo(),
                 request.getVersiculo())).map(Verse::getTexto);
         responseObserver.onNext(ResponseMsg.newBuilder().setValor(res.orElse("")).build());

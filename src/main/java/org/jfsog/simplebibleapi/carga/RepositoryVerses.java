@@ -27,9 +27,9 @@ public class RepositoryVerses implements ApplicationRunner {
     private static final Pattern pattern = Pattern.compile("(\\w+) (\\d+):(\\d+) (.+)");
     private VerseRepository verseRepository;
     public Optional<Tuple4<String, Integer, Integer, String>> extrairVerso(String linha) {
-        Matcher matcher = pattern.matcher(linha.trim());
+        Matcher matcher = pattern.matcher(linha);
         if (matcher.find()) {
-            return Optional.of(new Tuple4<>(matcher.group(1),
+            return Optional.of(new Tuple4<>(matcher.group(1).toLowerCase(),
                     Integer.parseInt(matcher.group(2)),
                     Integer.parseInt(matcher.group(3)),
                     matcher.group(4)));
