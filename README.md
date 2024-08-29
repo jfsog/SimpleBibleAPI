@@ -1,3 +1,20 @@
+# SimpleBibleAPI
+
+Uma API da Bíblia simples e eficiente, desenvolvida em Java com gRPC, projetada para fácil integração e acesso rápido aos textos bíblicos.
+
+## API gRPC
+
+
+### Descrição dos Principais Arquivos
+
+- **SimpleBibleApiApplication.java**: Classe principal que inicializa a aplicação.
+- **BibleService.java**: Implementação do serviço gRPC que processa requisições para busca de versículos.
+- **RepositoryVerses.java**: Responsável por carregar os versículos a partir de um arquivo de texto.
+- **VerseRepository.java**: Repositório que gerencia o acesso aos dados dos versículos.
+- **Verse.java**: Classe que representa um versículo.
+- **Bible-Service.proto**: Arquivo que define o serviço gRPC e as mensagens de request/response.
+- **bliv-tr_vpl.txt**: arquivo contendo versos da Bíblia, versão livre para uso disponível no repositório [BibliaLivre](https://github.com/blivre/BibliaLivre/releases).
+
 ## API gRPC
 
 O serviço gRPC é definido no arquivo `Bible-Service.proto`:
@@ -24,6 +41,7 @@ message ResponseMsg {
   string valor = 1;
 }
 ```
+
 ## Instalação
 
 ### Requisitos
