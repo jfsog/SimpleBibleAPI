@@ -17,7 +17,7 @@ Uma API da Bíblia simples e eficiente, desenvolvida em Java com gRPC, projetada
 
 ## API gRPC
 
-O serviço gRPC é definido no arquivo `Bible-Service.proto`:
+O serviço [gRPC](https://grpc.io/) é definido no arquivo `Bible-Service.proto`:
 
 ```proto
 syntax = "proto3";
