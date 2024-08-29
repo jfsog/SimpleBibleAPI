@@ -1,8 +1,8 @@
 syntax = "proto3";
 option java_multiple_files = true;
-option java_package = "com.jfsog.grpc_bible.v1.Bible";
+option java_package = "org.jfsog.grpc_bible.v1.Bible";
 
-package com.jfsog.simplebibleapi.v1.Bible;
+package org.jfsog.simplebibleapi.v1.Bible;
 service BibleService{
   rpc BuscaVerso(RequestMsg) returns (ResponseMsg);
 }

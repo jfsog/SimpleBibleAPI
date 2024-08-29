@@ -1,8 +1,8 @@
 package org.jfsog.simplebibleapi.Service;
 
-import com.jfsog.grpc_bible.v1.Bible.BibleServiceGrpc;
-import com.jfsog.grpc_bible.v1.Bible.RequestMsg;
-import com.jfsog.grpc_bible.v1.Bible.ResponseMsg;
+import org.jfsog.grpc_bible.v1.Bible.BibleServiceGrpc;
+import org.jfsog.grpc_bible.v1.Bible.RequestMsg;
+import org.jfsog.grpc_bible.v1.Bible.ResponseMsg;
 import io.grpc.stub.StreamObserver;
 import lombok.AllArgsConstructor;
 import net.devh.boot.grpc.server.service.GrpcService;
